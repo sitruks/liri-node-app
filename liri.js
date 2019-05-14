@@ -1,18 +1,91 @@
 require("dotenv").config();
-const fs = require("fs");
 const inquirer = require("inquirer");
 const keys = require("./keys.js");
+const axios = require("axios");
+const moment = require("moment");
+const fs = require("fs");
+const Spotify = require("node-spotify-api");
 const spotify = new Spotify(keys.spotify);
 
-
-// Load the fs package to read and write
-// Take two arguments.
-// The first will be the action (i.e. "deposit", "withdraw", etc.)
-// The second will be the amount that will be added, withdrawn, etc.
 const command = process.argv[2];
 const value = process.argv[3];
 
-// USER PROMPT
+// //// MUSIC FUNCTIONS
+
+// ARTIST LOOKUP
+const artistNames = function (artist) {
+    return artist.name;
+};
+
+// SPOTIFY LOOKUP
+const spotify = function (songName) {
+    if (songName === undefined) {
+        songName = "Feliz Navidad";
+    }
+    spotify.search(
+        {
+            type: "track",
+            query: songName
+        },
+        function (err, data) {
+            if (err) {
+                console.log("Error occurred: " + err);
+                return;
+            }
+            const songs = data.tracks.items;
+
+            for (let i = 0; i < songs.length; i++) {
+                console.log(i);
+                console.log("artist(s): " + songs[i].artists.map(artistNames));
+                console.log("song name: " + songs[i].name);
+                console.log("preview song: " + songs[i].preview_url);
+                console.log("album: " + songs[i].album.name);
+                console.log("-----------------------------------");
+            }
+        }
+    );
+};
+
+// ARTIST LOOKUP
+const concert = function (artist) {
+    const queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+
+    axios.get(queryURL).then(
+        function (response) {
+            const jsonData = response.data;
+
+            if (!jsonData.length) {
+                console.log("Hate to be the bearer of bad news, but I just wasn't able to locate any results for " + artist);
+                return;
+            }
+
+            console.log("Oh now that I know!! \n(^^)/\nUpcoming concerts for " + artist + ":");
+
+            for (let i = 0; i < jsonData.length; i++) {
+                const show = jsonData[i];
+
+                // CONCERT DATA WITH FALLBACK CASE OF COUNTRY
+                // FORMAT WITH moment.js
+                console.log(
+                    show.venue.city +
+                    "," +
+                    (show.venue.region || show.venue.country) +
+                    " at " +
+                    show.venue.name +
+                    " " +
+                    moment(show.datetime).format("MM/DD/YYYY")
+                );
+            }
+        }
+    );
+};
+
+
+// //// MOVIE FUNCTIONS
+
+// //// LOOKUP FUNCTIONS
+
+// //// USER PROMPT
 inquirer
     .prompt([
         // Here we create a basic text prompt.
@@ -67,46 +140,48 @@ inquirer
         }
     });
 
-        // if (user.myPassword === "myHouse") {
-      
-        //   console.log("==============================================");
-        //   console.log("");
-        //   console.log("Well a deal's a deal " + user.name);
-        //   console.log("You can stay as long as you like.");
-        //   console.log("Just put down the " + user.carryingWhat.join(" and ") + ". It's kind of freaking me out.");
-        //   console.log("");
-        //   console.log("==============================================");
-        // }
-      
-      
-        // // If the user doesn't guess the password...
-        // else {
-      
-        //   console.log("==============================================");
-        //   console.log("");
-        //   console.log("Sorry " + user.name);
-        //   console.log("I'm calling the cops!");
-        //   console.log("");
-        //   console.log("==============================================");
-      
-        // }
+// if (user.myPassword === "myHouse") {
+
+//   console.log("==============================================");
+//   console.log("");
+//   console.log("Well a deal's a deal " + user.name);
+//   console.log("You can stay as long as you like.");
+//   console.log("Just put down the " + user.carryingWhat.join(" and ") + ". It's kind of freaking me out.");
+//   console.log("");
+//   console.log("==============================================");
+// }
+
+
+// // If the user doesn't guess the password...
+// else {
+
+//   console.log("==============================================");
+//   console.log("");
+//   console.log("Sorry " + user.name);
+//   console.log("I'm calling the cops!");
+//   console.log("");
+//   console.log("==============================================");
+
+// }
 
 // We will then create a switch-case statement (if-else would also work).
 // The switch-case will direct which function gets run.
 switch (command) {
-case "concert-this":
-  concert();
-  break;
+    case "concert-this":
+        concert();
+        break;
 
-case "spotify-this-song":
-  spotify();
-  break;
+    case "spotify-this-song":
+        spotify();
+        break;
 
-case "movie-this":
-  movie();
-  break;
+    case "movie-this":
+        movie();
+        break;
 
-case "do-what-it-says":
-  doIt();
-  break;
+    case "do-what-it-says":
+        doIt();
+        break;
 }
+
+
