@@ -10,14 +10,14 @@ const spotify = new Spotify(keys.spotify);
 const command = process.argv[2];
 const value = process.argv[3];
 
-// //// MUSIC FUNCTIONS
 
-// ARTIST LOOKUP
+// //////// MUSIC FUNCTIONS
+// //// ARTIST LOOKUP
 const artistNames = function (artist) {
     return artist.name;
 };
 
-// SPOTIFY LOOKUP
+// //// SPOTIFY LOOKUP
 const spotifyThis = function (songName) {
     if (songName === undefined) {
         songName = "Feliz Navidad";
@@ -46,7 +46,7 @@ const spotifyThis = function (songName) {
     );
 };
 
-// ARTIST LOOKUP
+// //// ARTIST LOOKUP
 const concert = function (artist) {
     const queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
@@ -82,8 +82,45 @@ const concert = function (artist) {
 
 
 // //// MOVIE FUNCTIONS
+const movie = function(movieName) {
+    if (movieName === undefined) {
+      movieName = "Spaceballs";
+    }
+  
+    const urlHit =
+      "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=full&tomatoes=true&apikey=trilogy";
+  
+    axios.get(urlHit).then(
+      function(response) {
+        const jsonData = response.data;
+  
+        console.log("Title: " + jsonData.Title);
+        console.log("Year: " + jsonData.Year);
+        console.log("Rated: " + jsonData.Rated);
+        console.log("IMDB Rating: " + jsonData.imdbRating);
+        console.log("Country: " + jsonData.Country);
+        console.log("Language: " + jsonData.Language);
+        console.log("Plot: " + jsonData.Plot);
+        console.log("Actors: " + jsonData.Actors);
+        console.log("Rotten Tomatoes Rating: " + jsonData.Ratings[1].Value);
+      }
+    );
+  };
 
 // //// LOOKUP FUNCTIONS
+var doIt = function() {
+  fs.readFile("random.txt", "utf8", function(error, data) {
+    console.log(data);
+
+    var dataArr = data.split(",");
+
+    if (dataArr.length === 2) {
+      pick(dataArr[0], dataArr[1]);
+    } else if (dataArr.length === 1) {
+      pick(dataArr[0]);
+    }
+  });
+};
 
 // //// USER PROMPT
 inquirer
@@ -101,7 +138,7 @@ inquirer
             // Here we create a basic text prompt.
             {
                 type: "list",
-                message: "Hi. there" + username + "I can do four whole things!",
+                message: "Hi. there " + username + ". \nI can do four whole things!",
                 choices: ["concert-this", "spotify-this-song", "movie-this", "do-what-it-is"],
                 name: "tasks"
             },
@@ -112,8 +149,6 @@ inquirer
             })
     });
 
-// Here we give the user a list to choose from.
-
 // Here we ask the user to confirm.
 // {
 //     type: "confirm",
@@ -122,52 +157,7 @@ inquirer
 //     default: true
 // }
 
-// inside of me, the prompt needs to be insdie so that it can be accessed.
-// then within that .then, the choices, then 
-
-
-
-// // Here we give the user a list to choose from.
-// {
-//     type: "list",
-//     message: ("OK, " + inquirer.name + ". I currently can handle four tasks for you... \nLike I said, KOBY, not SONY..."),
-//     choices: ["concert-this", "spotify-this-song", "movie-this", "do-what-it-is"],
-//     name: "choices"
-// },
-// // Here we ask the user to confirm.
-// {
-//     type: "confirm",
-//     message: "Are you sure you want to ask me about that?",
-//     name: "confirm",
-//     default: true
-// }
-
-// if (user.myPassword === "myHouse") {
-
-//   console.log("==============================================");
-//   console.log("");
-//   console.log("Well a deal's a deal " + user.name);
-//   console.log("You can stay as long as you like.");
-//   console.log("Just put down the " + user.carryingWhat.join(" and ") + ". It's kind of freaking me out.");
-//   console.log("");
-//   console.log("==============================================");
-// }
-
-
-// // If the user doesn't guess the password...
-// else {
-
-//   console.log("==============================================");
-//   console.log("");
-//   console.log("Sorry " + user.name);
-//   console.log("I'm calling the cops!");
-//   console.log("");
-//   console.log("==============================================");
-
-// }
-
-// We will then create a switch-case statement (if-else would also work).
-// The switch-case will direct which function gets run.
+// //// LIRI OPTIONS
 function switchFunction(command) {
     switch (command) {
         case "concert-this":
