@@ -18,7 +18,7 @@ const artistNames = function (artist) {
 };
 
 // SPOTIFY LOOKUP
-const spotify = function (songName) {
+const spotifyThis = function (songName) {
     if (songName === undefined) {
         songName = "Feliz Navidad";
     }
@@ -94,51 +94,53 @@ inquirer
             message: "Hi. I'm LiRi --the KOBY equivalent of productivity assistants. What is your name?",
             name: "name"
         },
-        // Here we give the user a list to choose from.
-        {
-            type: "list",
-            message: ("OK, " + inquirer.name + ". I currently can handle four tasks for you... \nLike I said, KOBY, not SONY..."),
-            choices: ["concert-this", "spotify-this-song", "movie-this", "do-what-it-is"],
-            name: "choices"
-        },
-        // Here we ask the user to confirm.
-        {
-            type: "confirm",
-            message: "Are you sure you want to ask me about that?",
-            name: "confirm",
-            default: true
-        }
     ])
-    .then(function (inquirerResponse) {
-        // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
-        if (inquirerResponse.hunger) {
-            console.log("\nThat's okay " + inquirerResponse.adjective + "\nGet back in line when you are actually hungry.\n");
-        }
-    })
-    .prompt([
-        // Here we create a basic text prompt.
-        {
-            type: "input",
-            message: "What is your name again??",
-            name: "username"
-        },
-        // Here we create a basic password-protected text prompt.
-        {
-            type: "password",
-            message: "Set your password",
-            name: "password"
-        }
-    ])
-    .then(function (inquirerResponse) {
-        // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
-        if (inquirerResponse.confirm) {
-            console.log("\nWelcome " + inquirerResponse.username);
-            console.log("Your " + inquirerResponse.ramen + " is ready to enjoy!\n");
-        }
-        else {
-            console.log("\nThat's okay " + inquirerResponse.adjective + "\nGet back in line when you are actually hungry.\n");
-        }
+    .then(function (answers) {
+        const username = answers.name;
+            inquirer.prompt([
+            // Here we create a basic text prompt.
+            {
+                type: "list",
+                message: "Hi. there" + username + "I can do four whole things!",
+                choices: ["concert-this", "spotify-this-song", "movie-this", "do-what-it-is"],
+                name: "tasks"
+            },
+        ])
+            .then(function (answers) {
+                switchFunction(answers.tasks);
+                console.log(answers.tasks);
+            })
     });
+
+// Here we give the user a list to choose from.
+
+// Here we ask the user to confirm.
+// {
+//     type: "confirm",
+//     message: "Are you sure you want to ask me about that?",
+//     name: "confirm",
+//     default: true
+// }
+
+// inside of me, the prompt needs to be insdie so that it can be accessed.
+// then within that .then, the choices, then 
+
+
+
+// // Here we give the user a list to choose from.
+// {
+//     type: "list",
+//     message: ("OK, " + inquirer.name + ". I currently can handle four tasks for you... \nLike I said, KOBY, not SONY..."),
+//     choices: ["concert-this", "spotify-this-song", "movie-this", "do-what-it-is"],
+//     name: "choices"
+// },
+// // Here we ask the user to confirm.
+// {
+//     type: "confirm",
+//     message: "Are you sure you want to ask me about that?",
+//     name: "confirm",
+//     default: true
+// }
 
 // if (user.myPassword === "myHouse") {
 
@@ -166,22 +168,24 @@ inquirer
 
 // We will then create a switch-case statement (if-else would also work).
 // The switch-case will direct which function gets run.
-switch (command) {
-    case "concert-this":
-        concert();
-        break;
-
-    case "spotify-this-song":
-        spotify();
-        break;
-
-    case "movie-this":
-        movie();
-        break;
-
-    case "do-what-it-says":
-        doIt();
-        break;
-}
+function switchFunction(command) {
+    switch (command) {
+        case "concert-this":
+            concert();
+            break;
+    
+        case "spotify-this-song":
+            spotifyThis();
+            break;
+    
+        case "movie-this":
+            movie();
+            break;
+    
+        case "do-what-it-says":
+            doIt();
+            break;
+    }
+};
 
 
