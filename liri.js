@@ -7,6 +7,7 @@ const fs = require("fs");
 const Spotify = require("node-spotify-api");
 const spotify = new Spotify(keys.spotify);
 
+
 const command = process.argv[2];
 const value = process.argv[3];
 
