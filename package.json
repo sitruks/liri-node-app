@@ -2,7 +2,10 @@
   "name": "liri-node-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "liri.js",
+  "bin": {
+    "liri-node-app": "./liri.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,11 +22,15 @@
   "homepage": "https://github.com/sitruks/liri-node-app#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "commander": "^3.0.0",
+    "crypto": "^1.0.1",
     "dotenv": "^8.0.0",
     "fs": "0.0.1-security",
     "inquirer": "^6.3.1",
     "moment": "^2.24.0",
+    "mongoose": "^5.6.9",
     "node-spotify-api": "^1.1.1",
+    "randomstring": "^1.1.5",
     "spotify": "^0.3.0"
   }
 }
