@@ -2,9 +2,10 @@
   "name": "liri-node-app",
   "version": "1.0.0",
   "description": "",
-  "main": "liri.js",
+  "main": "index.js",
+  "preferGlobal": true,
   "bin": {
-    "liri-node-app": "./liri.js"
+    "liri": "./liri.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
