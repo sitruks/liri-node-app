@@ -1,7 +1,10 @@
 # liri-node-app
-After taking some time to look back at my old projects, I discovered that I could take this app so much further. In addition to developing a node.js app that can call and take in an API with Inquirer.js, I decided to productize it a little but giving it some styling in the terminal. Addtionally, commands for usability, were add with Commander.js. 
+After taking some time to look back at my old projects, I discovered that I could take this app so much further. In addition to developing a **Node.js** app that can call and take in an API with **Inquirer.js**, I decided to productize it a little but giving it some styling in the terminal. Addtionally, commands for usability, were add with **Commander.js**. 
 
 The end result was a similarly snarky LIRI-BOT, but with a little more piz-zazz.
+
+# demo - screencapture
+A live example of good 'ol LIRI in action!
 
 # liri-official-origin-story
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
@@ -15,28 +18,23 @@ Working principle and other documentation of this kit is available at [Medium](h
 https://alligator.io/nodejs/interactive-command-line-prompts/  
 
 # setup
-**To start, do the following**
-0. go to root of project
-1. chmod +x bin/liri.js
-1. npm i
-2. npm i -g ./
-3. *if there is an issue you may need to give the app the correct filesystem permissions. see this [article](https://timber.io/blog/creating-a-real-world-cli-app-with-node/) for more details*  
-    * chmod +x bin/liri.js
-    * npm link
-4. liri
-5. follow the instructions from the CLI 🤓
+**To start, do the following:**
 
-# further customization
-**add your own keys to the project**
--> Create a .env file in the same directory as the rest of the files.  
+        0. clone the repo and cd [project-name] to go to root of project from which:
 
-In the .env file should be: 
+        1. chmod +x bin/liri.js
 
-    '# Spotify API keys'
+        2. npm i
 
-    'SPOTIFY_ID=your-spotify-ID-here'
+       *3. npm i -g ./ 
 
-    'SPOTIFY_SECRET=your-spotify-secret-here'
+        4. npm link
+
+        5. liri
+
+        6. follow the instructions from the CLI 🤓
+---
+    *if there is an issue you may need to give the app the correct filesystem permissions. see this [article](https://timber.io/blog/creating-a-real-world-cli-app-with-node/) for more details*  
 
 # liri available functions
 
@@ -96,10 +94,22 @@ The program will take the text inside of **random.txt** and use it to call the f
 Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
 
-It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
+It should run spotify-this-song for "Wake Me Up Before You Go-Go," as follows the text in random.txt.
 Edit the text in random.txt to test out the feature for movie-this and concert-this.
-Currently in random.txt, the following text is there:
+Currently in random.txt, the following text is there:  
 
-spotify-this-song,"I Want it That Way"
+###### random.txt
+    spotify-this-song, "Wake Me Up Before You Go-Go"
 
-This would call the spotify-this-song function and pass in "I Want it That Way" as the song.
+# further customization
+**add your own keys to the project**
+-> Create a .env file in the same directory as the rest of the files.  
+
+
+###### .env 
+
+    '# Spotify API keys'
+
+    'SPOTIFY_ID=your-spotify-ID-here'
+
+    'SPOTIFY_SECRET=your-spotify-secret-here'
