@@ -4,7 +4,7 @@ After taking some time to look back at my old projects, I discovered that I coul
 The end result was a similarly snarky LIRI-BOT, but with a little more piz-zazz.
 
 # demo - screencapture
-A live example of good 'ol LIRI in action!
+A live example of good 'ol LIRI in action!  
 ![LIRI-BOT in ACTION](liri-demo.gif)
 
 # setup
