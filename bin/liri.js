@@ -32,7 +32,7 @@ const welcomeMenuTimer = () => {
 /*******************************************/
 
 // Print LIRI menu options
-// $ menu-options { help, menu, option* }
+// $ liri { help, menu, option* }
 program
     .command("menu") // sub-command name
     .alias("help") // alternative sub-command is `help`
@@ -44,19 +44,67 @@ program
         menu();
     });
 
+// Find a band or concert
+// $ liri { concert-this, c }
+program
+    .command("concert-this") // sub-command name
+    .alias("c") // alternative sub-command is `c`
+    .description("Find a band or concert") // command description
+
+    // function to execute when command is uses
+    .action(function () {
+        concert();
+    });
+
+// Do this thing
+// $ liri { do-what-it-says, d }
+program
+    .command("do-what-it-says") // sub-command name
+    .alias("d") // alternative sub-command is `d`
+    .description("Do this thing") // command description
+
+    // function to execute when command is uses
+    .action(function () {
+        doIt();
+    });
+
+// Find a movie
+// $ liri { movie-this, m }
+program
+    .command("movie-this") // sub-command name
+    .alias("m") // alternative sub-command is `m`
+    .description("Find a movie") // command description
+
+    // function to execute when command is uses
+    .action(function () {
+        movie();
+    });
+
+// Find a song or artist
+// $ liri { spotify-this-song, s }
+program
+    .command("spotify-this-song") // sub-command name
+    .alias("s") // alternative sub-command is `s`
+    .description("Find a song or artist") // command description
+
+    // function to execute when command is uses
+    .action(function () {
+        spotify();
+    });
+
 // Order a coffee
-// $ coffee-shop { order }
+// $ liri { java-break, j, order, o }
 program
     .command("order") // sub-command name
     .alias("o") // alternative sub-command is `o`
+    .alias("java-break") // alternative sub-command is `java-break`
+    .alias("j") // alternative sub-command is `j`
     .description("Order a coffee") // command description
 
     // function to execute when command is uses
     .action(function () {
         order();
     });
-
-
 
 // allow commander to parse `process.argv`
 program.parse(process.argv);

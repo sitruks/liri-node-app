@@ -1,0 +1,30 @@
+
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman

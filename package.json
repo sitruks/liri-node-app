@@ -5,7 +5,7 @@
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-    "liri": "bin/liri.js"
+    "liri": "./bin/liri.js"
   },
   "directories": {
     "lib": "lib"
