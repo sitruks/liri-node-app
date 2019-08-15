@@ -190,3 +190,136 @@ Artist Name: Rick Astley
 The song's name: Whenever You Need Somebody
 A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
 The album that the song is from: Whenever You Need Somebody
+Log concert-this: 
+Name of the artist/band: Muse
+Name of the venue: Telenor Arena Shuttlebuss
+Venue location: Oslo
+Date of the Event: 09-07-2019
+
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log concert-this: 
+Name of the artist/band: Muse
+Name of the venue: Telenor Arena Shuttlebuss
+Venue location: Oslo
+Date of the Event: 09-07-2019
+
+Log concert-this: 
+Name of the artist/band: Nas
+Name of the venue: ShoWare Center
+Venue location: Kent
+Date of the Event: 08-17-2019
+
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: Wham!
+The song's name: Make It Big
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/02f3y3NTsddjdUMoNiBppI
+The album that the song is from: Make It Big
+Log spotify-this-song: 
+Artist Name: Maná
+The song's name: ¿Dónde Jugarán Los Niños?
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/2G0I22upYkTLYxfoAHiwBK
+The album that the song is from: ¿Dónde Jugarán Los Niños?
+Log spotify-this-song: 
+Artist Name: Perfume Genius
+The song's name: No Shape
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/7awgq3vvlsIeA7dZduR9x4
+The album that the song is from: No Shape
+Log spotify-this-song: 
+Artist Name: King Lil G
+The song's name: Blessed By God
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/0GXH806c36cllinV9sbZod
+The album that the song is from: Blessed By God
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log spotify-this-song: 
+Artist Name: John Williams
+The song's name: Star Wars: The Phantom Menace (Original Motion Picture Soundtrack)
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/45EFycwtfRhnDPWbc2mClK
+The album that the song is from: Star Wars: The Phantom Menace (Original Motion Picture Soundtrack)
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: Madonna
+The song's name: Celebration (double disc version)
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/43lok9zd7BW5CoYkXZs7S0
+The album that the song is from: Celebration (double disc version)
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log spotify-this-song: 
+Artist Name: John Williams
+The song's name: Star Wars: The Phantom Menace (Original Motion Picture Soundtrack)
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/45EFycwtfRhnDPWbc2mClK
+The album that the song is from: Star Wars: The Phantom Menace (Original Motion Picture Soundtrack)
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: Madonna
+The song's name: Celebration (double disc version)
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/43lok9zd7BW5CoYkXZs7S0
+The album that the song is from: Celebration (double disc version)
+Log spotify-this-song: 
+Artist Name: Maná
+The song's name: ¿Dónde Jugarán Los Niños?
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/2G0I22upYkTLYxfoAHiwBK
+The album that the song is from: ¿Dónde Jugarán Los Niños?
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
