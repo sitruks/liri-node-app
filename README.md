@@ -51,7 +51,7 @@ https://alligator.io/nodejs/interactive-command-line-prompts/
 * *custom-user-query*  
 
     **liri *+* {first letter of each function} *+* 'detail with spaces'**  
-    * (i.e. liri c 'Modest Mouse')
+    * (i.e. liri c Modest Mouse)
 
 # commands and expected outputs
 
@@ -99,7 +99,7 @@ Edit the text in random.txt to test out the feature for movie-this and concert-t
 Currently in random.txt, the following text is there:  
 
 ###### random.txt
-    spotify-this-song, "Wake Me Up Before You Go-Go"
+    spotify-this-song, "Never Gonna Give You Up"
 
 # further customization
 **add your own keys to the project**

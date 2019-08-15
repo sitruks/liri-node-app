@@ -13,6 +13,11 @@ const movie = require("../lib/movie");
 const spotify = require("../lib/spotify");
 const order = require("../lib/order");
 
+//userCommand for "concert-this, spotify-this-song, movie-this, do-what-it-says"
+// const userCommand = process.argv[2];
+//userValue for the name of the artist/band, song, movie
+const userValue = process.argv.slice(3).join(" ");
+
 // welcome timer variables
 const welcomeMenuTimer = () => {
     welcomeMenu();
@@ -53,7 +58,7 @@ program
 
     // function to execute when command is uses
     .action(function () {
-        concert();
+        concert(userValue);
     });
 
 // Do this thing
@@ -77,7 +82,7 @@ program
 
     // function to execute when command is uses
     .action(function () {
-        movie();
+        movie(userValue);
     });
 
 // Find a song or artist
@@ -89,7 +94,7 @@ program
 
     // function to execute when command is uses
     .action(function () {
-        spotify();
+        spotify(userValue);
     });
 
 // Order a coffee
@@ -110,6 +115,7 @@ program
 program.parse(process.argv);
 
 // slightly hacky solution to invoke just the phrase "liri" with no extra arguement
+// no longer working with this example, need to require the whole string "./bin/liri.js"
 if (!program.args.length) {
     welcomeMenuTimer();
 };

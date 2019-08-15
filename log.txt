@@ -28,3 +28,165 @@ Country where the movie was produced: USA
 Language of the movie: English
 Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
 Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log spotify-this-song: 
+Artist Name: Muse
+The song's name: The Resistance
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/0eFHYz8NmK75zSplL5qlfM
+The album that the song is from: The Resistance
+Log spotify-this-song: 
+Artist Name: Muse
+The song's name: Absolution
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/0HcHPBu9aaF1MxOiZmUQTl
+The album that the song is from: Absolution
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log spotify-this-song: 
+Artist Name: Muse
+The song's name: Absolution
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/0HcHPBu9aaF1MxOiZmUQTl
+The album that the song is from: Absolution
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log concert-this: 
+Name of the artist/band: muse
+Name of the venue: Telenor Arena Shuttlebuss
+Venue location: Oslo
+Date of the Even: 09-07-2019
+
+Log concert-this: 
+Name of the artist/band: muse
+Name of the venue: Telenor Arena Shuttlebuss
+Venue location: Oslo
+Date of the Even: 09-07-2019
+
+Log concert-this: 
+Name of the artist/band: muse
+Name of the venue: Telenor Arena Shuttlebuss
+Venue location: Oslo
+Date of the Even: 09-07-2019
+
+Log concert-this: 
+Name of the artist/band: Muse
+Name of the venue: Telenor Arena Shuttlebuss
+Venue location: Oslo
+Date of the Even: 09-07-2019
+
+Log concert-this: 
+Name of the artist/band: Nas
+Name of the venue: ShoWare Center
+Venue location: Kent
+Date of the Even: 08-17-2019
+
+Log spotify-this-song: 
+Artist Name: Wham!
+The song's name: Make It Big
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/02f3y3NTsddjdUMoNiBppI
+The album that the song is from: Make It Big
+Log spotify-this-song: 
+Artist Name: Wham!
+The song's name: Make It Big
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/02f3y3NTsddjdUMoNiBppI
+The album that the song is from: Make It Big
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
+Log spotify-this-song: 
+Artist Name: Various Artists
+The song's name: Rocky IV
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3t3BbpFJiGcXl4jI5CRLLA
+The album that the song is from: Rocky IV
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
+Log spotify-this-song: 
+Artist Name: José Feliciano
+The song's name: Feliz Navidad
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/3No96PtEFyRfX1oELmZTPu
+The album that the song is from: Feliz Navidad
+Log concert-this: 
+Name of the artist/band: Nas
+Name of the venue: ShoWare Center
+Venue location: Kent
+Date of the Event: 08-17-2019
+
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
+Log movie-this: 
+Title of the movie: Spaceballs
+Year the movie came out: 1987
+IMDB Rating of the movie: 7.1
+Rotten Tomatoes Rating of the movie: 59%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: A rogue star pilot and his trusty sidekick must come to the rescue of a Princess and save the galaxy from a ruthless race of beings known as Spaceballs.
+Actors in the movie: Mel Brooks, John Candy, Rick Moranis, Bill Pullman
+
+Log movie-this: 
+Title of the movie: star wars
+Year the movie came out: 1977
+IMDB Rating of the movie: 8.6
+Rotten Tomatoes Rating of the movie: 93%
+Country where the movie was produced: USA
+Language of the movie: English
+Plot of the movie: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+Actors in the movie: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+
+Log spotify-this-song: 
+Artist Name: Rick Astley
+The song's name: Whenever You Need Somebody
+A preview link of the song from Spotify: https://api.spotify.com/v1/albums/6XhjNHCyCDyyGJRM5mg40G
+The album that the song is from: Whenever You Need Somebody
