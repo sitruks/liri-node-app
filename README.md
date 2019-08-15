@@ -6,17 +6,6 @@ The end result was a similarly snarky LIRI-BOT, but with a little more piz-zazz.
 # demo - screencapture
 A live example of good 'ol LIRI in action!
 
-# liri-official-origin-story
-LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
-
-# sitruks-inspiration-origin-homage
-**Basic framework used to help separate concerns and make the commmand line pretty**  
-Working principle and other documentation of this kit is available at [Medium](https://medium.com/@thatisuday/making-cli-app-with-ease-using-commander-js-and-inquirer-js-f3bbd52977ac)  
-
-
-**Blog article for inquirer inspiration**  
-https://alligator.io/nodejs/interactive-command-line-prompts/  
-
 # setup
 **To start, do the following:**
 
@@ -35,6 +24,17 @@ https://alligator.io/nodejs/interactive-command-line-prompts/
         6. follow the instructions from the CLI 🤓
 ---
     *if there is an issue you may need to give the app the correct filesystem permissions. see this [article](https://timber.io/blog/creating-a-real-world-cli-app-with-node/) for more details*  
+
+# liri-official-origin-story
+LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
+
+# sitruks-inspiration-origin-homage
+**Basic framework used to help separate concerns and make the commmand line pretty**  
+Working principle and other documentation of this kit is available at [Medium](https://medium.com/@thatisuday/making-cli-app-with-ease-using-commander-js-and-inquirer-js-f3bbd52977ac)  
+
+
+**Blog article for inquirer inspiration**  
+https://alligator.io/nodejs/interactive-command-line-prompts/  
 
 # liri available functions
 
