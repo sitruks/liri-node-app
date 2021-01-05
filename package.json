@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sitruks/liri-node-app#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "colors": "^1.3.3",
     "commander": "^3.0.0",
     "dotenv": "^8.0.0",
